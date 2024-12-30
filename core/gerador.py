@@ -24,7 +24,7 @@ class Gerador():
                 print(f"Sucesso na requisição para o ID {id}.")
                 return id, data
             else:
-                print(f"Erro na requisição: {response.status_code}. Tentando novamente...")
+                print(f"Erro na requisição do ID {id}: {response.status_code}. Tentando novamente...")
                 retries += 1
                 time.sleep(1)  # Pausa antes de tentar novamente
         print(f"Falha após {max_retries} tentativas.")
