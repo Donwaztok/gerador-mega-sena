@@ -1,0 +1,58 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Gerador Mega Sena",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "cwd": "${workspaceFolder}",
+            "args": [],
+            "stopOnEntry": false
+        },
+        {
+            "name": "Python: Debug Gerador Mega Sena (Forçar Atualização)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--force-update"
+            ],
+            "stopOnEntry": false
+        },
+        {
+            "name": "Python: Debug Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Debug Module (core.gerador)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "core.gerador",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
+
